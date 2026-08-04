@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 flex items-center justify-center">
@@ -18,13 +20,13 @@ export default function Home() {
         </p>
 
         <div className="mt-10 flex justify-center gap-4">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+          <Link href="/blog" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
             Read Blogs
-          </button>
+          </Link>
 
-          <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">
+          <Link href="/about" className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">
             About Me
-          </button>
+          </Link>
         </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
