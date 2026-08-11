@@ -30,8 +30,13 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <nav className="mb-6 flex gap-4 px-6">
-          <Link href="/" className="text-sky-400">Home Root</Link>
-          <Link href="/blog" className="text-sky-400">Blog Sub-Tree</Link>
+          <Link href="/" className="text-sky-400">Home</Link>
+          <Link href="/blog" className="text-sky-400">Blog</Link>
+          <Link href="/services" className="text-sky-400">Services</Link>
+          <Link href="/marketplace" className="text-sky-400">Marketplace</Link>
+          <Link href="/contact" className="text-sky-400">Contact</Link>
+          <Link href="/items" className="text-sky-400">Forms</Link>
+          <Link href="/posts-demo" className="text-sky-400">Posts Demo</Link>
         </nav>
         {children}
       </body>
