@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function Marketplace() {
   return (
     <main className="bg-gray-100 min-h-screen">
@@ -6,10 +9,10 @@ export default function Marketplace() {
           <div className="flex justify-between items-center h-16">
             <h1 className="text-2xl font-bold">My Website</h1>
             <div className="space-x-6 hidden md:flex">
-              <a href="/" className="hover:text-yellow-300">Home</a>
+              <Link href="/" className="hover:text-yellow-300">Home</Link>
               <a href="/about" className="hover:text-yellow-300">About</a>
               <a href="/services" className="hover:text-yellow-300">Services</a>
-              <a href="/blog" className="hover:text-yellow-300">Blogs</a>
+              <Link href="/blog" className="hover:text-yellow-300">Blogs</Link>
               <a href="/marketplace" className="text-yellow-300 font-semibold">Marketplace</a>
               <a href="/contact" className="hover:text-yellow-300">Contact</a>
             </div>
@@ -51,9 +54,11 @@ export default function Marketplace() {
         <h2 className="text-3xl font-bold mb-8 text-center">Featured Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"
               alt="Smartphone"
+              width={500}
+              height={224}
               className="rounded-t-xl h-56 w-full object-cover"
             />
             <div className="p-5">
@@ -67,9 +72,11 @@ export default function Marketplace() {
           </div>
 
           <div className="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
               alt="Running Shoes"
+              width={500}
+              height={224}
               className="rounded-t-xl h-56 w-full object-cover"
             />
             <div className="p-5">
@@ -83,9 +90,11 @@ export default function Marketplace() {
           </div>
 
           <div className="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=500"
               alt="Laptop"
+              width={500}
+              height={224}
               className="rounded-t-xl h-56 w-full object-cover"
             />
             <div className="p-5">
@@ -99,9 +108,11 @@ export default function Marketplace() {
           </div>
 
           <div className="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
               alt="Smart Watch"
+              width={500}
+              height={224}
               className="rounded-t-xl h-56 w-full object-cover"
             />
             <div className="p-5">
@@ -140,10 +151,10 @@ export default function Marketplace() {
         <div className="max-w-7xl mx-auto text-center">
           <p>© 2026 My Marketplace | All Rights Reserved</p>
           <div className="mt-3 space-x-5">
-            <a href="/">Home</a>
+            <Link href="/">Home</Link>
             <a href="/about">About</a>
             <a href="/services">Services</a>
-            <a href="/blog">Blogs</a>
+            <Link href="/blog">Blogs</Link>
             <a href="/marketplace">Marketplace</a>
             <a href="/contact">Contact</a>
           </div>

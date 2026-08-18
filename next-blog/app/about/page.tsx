@@ -39,7 +39,7 @@ export default function About() {
           DevSphere is a platform dedicated to developers,
           students, and technology enthusiasts.
 
-          Here you'll find tutorials, coding guides,
+          Here you&apos;ll find tutorials, coding guides,
           AI projects, web development resources,
           and productivity tips.
 
