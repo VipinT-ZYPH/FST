@@ -1,11 +1,10 @@
 'use server'; 
 import { revalidatePath } from 'next/cache'; 
-import type { PrismaClient } from '@prisma/client';
+import { Prisma } from '@prisma/client';
 import { prisma } from '@/app/lib/prisma'; 
 
-type TxClient = Parameters<
-    Extract<Parameters<PrismaClient['$transaction']>[0], (tx: unknown) => unknown>
->[0];
+type TxClient = Prisma.TransactionClient;
+
 
 export async function createAuthorWithPostAction(formData: FormData) {
     const name = formData.get('name') as string; 
