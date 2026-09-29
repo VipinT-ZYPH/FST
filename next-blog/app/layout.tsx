@@ -37,6 +37,7 @@ export default function RootLayout({
           <Link href="/contact" className="text-sky-400">Contact</Link>
           <Link href="/items" className="text-sky-400">Forms</Link>
           <Link href="/posts-demo" className="text-sky-400">Posts Demo</Link>
+          <Link href="/login" className="text-sky-400">Login</Link>
         </nav>
         {children}
       </body>
