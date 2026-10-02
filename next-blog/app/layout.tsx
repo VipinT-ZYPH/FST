@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import AuthNav from "./components/AuthNav";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,7 +30,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <nav className="mb-6 flex gap-4 px-6">
+        <nav className="mb-6 flex gap-4 px-6 items-center">
           <Link href="/" className="text-sky-400">Home</Link>
           <Link href="/blog" className="text-sky-400">Blog</Link>
           <Link href="/services" className="text-sky-400">Services</Link>
@@ -37,6 +38,9 @@ export default function RootLayout({
           <Link href="/contact" className="text-sky-400">Contact</Link>
           <Link href="/items" className="text-sky-400">Forms</Link>
           <Link href="/posts-demo" className="text-sky-400">Posts Demo</Link>
+          <div className="ml-auto">
+            <AuthNav />
+          </div>
         </nav>
         {children}
       </body>
