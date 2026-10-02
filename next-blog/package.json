@@ -13,9 +13,13 @@
     "@better-auth/mongo-adapter": "^1.7.7",
     "@prisma/adapter-pg": "^7.9.1",
     "@prisma/client": "^7.9.1",
+<<<<<<< HEAD
     "better-auth": "^1.7.7",
     "better-call": "^1.4.1",
     "mongodb": "^7.7.0",
+=======
+    "better-auth": "^1.7.6",
+>>>>>>> 508e0725b907c0d7b4f8f1f7cc20f341cc57d207
     "mongoose": "^9.10.1",
     "next": "16.2.10",
     "pg": "^8.23.1",
