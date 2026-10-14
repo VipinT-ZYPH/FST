@@ -1,0 +1,22 @@
+node_modules
+.next
+.git
+.gitignore
+.env*
+!.env.example
+npm-debug.log*
+README.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Not part of the root Next.js app (local tooling / separate project)
+node20
+nvm-noinstall
+next-blog
+PATH.txt
+settings.txt
+*.zip
+*.log
+*.tsbuildinfo
+next-env.d.ts
